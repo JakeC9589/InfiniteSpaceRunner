@@ -1,2 +1,2 @@
 # InfiniteSpaceRunner
-A cute little arcady infinite runner with gravity mechanics
+A cute little infinite runner with gravity mechanics
