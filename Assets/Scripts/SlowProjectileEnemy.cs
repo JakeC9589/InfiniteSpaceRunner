@@ -50,6 +50,8 @@ public class SlowProjectileEnemy : EnemyController
             projectile.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
             Vector3 dir = player.transform.position - transform.position;
             projectile.GetComponent<Rigidbody2D>().AddForce(dir.normalized * 200);
+            AudioSource a = GameObject.Find("shootSound").GetComponent<AudioSource>();
+            a.Play();
 
         }
 

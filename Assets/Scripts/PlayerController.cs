@@ -102,6 +102,8 @@ public class PlayerController : MonoBehaviour
             GameObject bullet = (GameObject)Instantiate(Resources.Load("Bullet"));
             bullet.transform.position = gun.transform.position;
             bullet.GetComponent<Rigidbody2D>().AddForce(new Vector2(1.0f, 0.0f) * 1000);
+            AudioSource a = GameObject.Find("shootSound").GetComponent<AudioSource>();
+            a.Play();
         }
     }
 

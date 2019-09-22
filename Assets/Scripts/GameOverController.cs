@@ -67,6 +67,7 @@ public class GameOverController : MonoBehaviour
 
     public void OnClick()
     {
+        GameObject.Find("Space_Reggae").GetComponent<Music>().StopMusic();
         SceneManager.LoadScene(0);
     }
 }
